@@ -25,7 +25,7 @@ $('tk1').textContent=line;$('tk2').textContent=line;
 // headline: word by word ink reveal
 function writeHead(){
   const h=$('head');h.innerHTML='';
-  const parts=[['She is the best',''],['art my eyes',''],['have ever seen','ap']];
+  const parts=[['One Smile','One Person'],['and everything',''],['Best','ap']];
   let i=0;parts.forEach(([t,c],li)=>{
     t.trim().split(' ').forEach(w=>{const s=document.createElement('span');s.className='w '+c;s.textContent=w;s.style.animationDelay=(i++*.28)+'s';h.appendChild(s)});
     if(li<2)h.appendChild(document.createElement('br'));
